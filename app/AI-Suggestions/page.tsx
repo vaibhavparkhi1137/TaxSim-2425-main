@@ -4,7 +4,8 @@ import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import { Input } from "@nextui-org/input";
 import { Button } from "@nextui-org/button";
 import { Spinner } from "@nextui-org/spinner";
-import { FaRobot, FaLightbulb, FaInfoCircle } from "react-icons/fa";
+import { FaLightbulb, FaInfoCircle } from "react-icons/fa";
+import { MdOutlineSmartToy } from "react-icons/md";
 
 export default function AISuggestionsPage() {
   const [income, setIncome] = useState("");
@@ -60,7 +61,7 @@ export default function AISuggestionsPage() {
     <div className="container mx-auto px-4 py-8 max-w-7xl">
       <div className="text-center mb-10">
         <div className="flex items-center justify-center gap-2 mb-4">
-          <FaRobot className="text-4xl text-primary" />
+          <MdOutlineSmartToy className="text-4xl text-primary" />
           <h1 className="text-4xl font-bold">AI-Powered Tax Suggestions</h1>
         </div>
         <p className="text-default-500 max-w-2xl mx-auto">

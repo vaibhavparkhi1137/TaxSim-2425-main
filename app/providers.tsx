@@ -5,10 +5,12 @@ import * as React from "react";
 import { NextUIProvider } from "@nextui-org/system";
 import { useRouter } from "next/navigation";
 
+export type ThemeAttribute = "class" | "data-theme" | Array<"class" | "data-theme">;
+
 export interface ProvidersProps {
   children: React.ReactNode;
   themeProps?: {
-    attribute?: string;
+    attribute?: ThemeAttribute;
     defaultTheme?: string;
     enableSystem?: boolean;
     storageKey?: string;
